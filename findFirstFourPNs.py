@@ -9,4 +9,4 @@ while (totalPFs <= 4):
     if (perfectNumber(testNumber)):
         print(testNumber," is a perfect number")
         totalPFs = totalPFs + 1
-        testNumber = testNumber + 1
+    testNumber = testNumber + 1

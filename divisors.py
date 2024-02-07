@@ -1,21 +1,19 @@
-#Add your name here
-#Add the date here
-#Add the filename here
+#grace moore
+#7th feb 2024
+#divisors.py
+#week 3 notes for programming
+#if you use number 20 it should return [1,2,4,5,10] -> number needs to be a perfect number ie. all factors of number add up to initial number
 
-#Add a function below called divisors(num) which takes one argument of type integer
-#and returns a list of all the divisors(factors) of that that number -
-#A divisor or factor is a number which divides evenly leaving no remainder
-
-#define the funciton header called divisors expecting one argument
-
-    #set up an empty list to hold your result
-    
-    #loop i from 1 to the number you are checking (take care not to include the number itself)
-
-        #if the remainder when dividing the number by i is equal to zero then i is a divisor so...
-        
-            #apend i to the list you set up
+#define function header called divisors expecting one arguement
+def divisors(num):
+    #set up an empty list to hold result
+    myList = []
+    #loop from 1 to the number you are checking (take care not to include itself ie if num is 20 dont include 20 in factors}
+    for i in range(1,num):
+        if num % i == 0:#if 20%3 answer is 2 because remainder is 2, if you do 20%5 answer is 0 because there is no remainder-thats how we identify if it is perfect number, 0 = perf number
+            myList.append(i) 
             
- 
-    #return the list
+    return myList
+
+print(divisors(6))
     
